@@ -1,0 +1,264 @@
+{
+  "_version" : "2.2.0",
+  "_notes" : [
+    {
+      "_time" : 4.688,
+      "_lineIndex" : 2,
+      "_lineLayer" : 0,
+      "_type" : 1,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 5.688,
+      "_lineIndex" : 1,
+      "_lineLayer" : 0,
+      "_type" : 0,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 6.688,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 1,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 7.688,
+      "_lineIndex" : 0,
+      "_lineLayer" : 2,
+      "_type" : 0,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 8.688,
+      "_lineIndex" : 2,
+      "_lineLayer" : 0,
+      "_type" : 1,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 9.688,
+      "_lineIndex" : 1,
+      "_lineLayer" : 0,
+      "_type" : 0,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 10.688,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 1,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 11.688,
+      "_lineIndex" : 0,
+      "_lineLayer" : 2,
+      "_type" : 0,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 12.688,
+      "_lineIndex" : 2,
+      "_lineLayer" : 0,
+      "_type" : 1,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 13.688,
+      "_lineIndex" : 1,
+      "_lineLayer" : 0,
+      "_type" : 0,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 14.688,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 1,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 15.562,
+      "_lineIndex" : 0,
+      "_lineLayer" : 2,
+      "_type" : 0,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 16,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 1,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 16.031,
+      "_lineIndex" : 3,
+      "_lineLayer" : 0,
+      "_type" : 1,
+      "_cutDirection" : 8
+    },
+    {
+      "_time" : 16.375,
+      "_lineIndex" : 0,
+      "_lineLayer" : 0,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 16.5,
+      "_lineIndex" : 0,
+      "_lineLayer" : 1,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 16.625,
+      "_lineIndex" : 0,
+      "_lineLayer" : 2,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 16.75,
+      "_lineIndex" : 1,
+      "_lineLayer" : 2,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 16.875,
+      "_lineIndex" : 2,
+      "_lineLayer" : 2,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 17,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 17.125,
+      "_lineIndex" : 3,
+      "_lineLayer" : 1,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 17.25,
+      "_lineIndex" : 3,
+      "_lineLayer" : 0,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 17.375,
+      "_lineIndex" : 2,
+      "_lineLayer" : 0,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 17.5,
+      "_lineIndex" : 1,
+      "_lineLayer" : 0,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 17.625,
+      "_lineIndex" : 0,
+      "_lineLayer" : 0,
+      "_type" : 3,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 20,
+      "_lineIndex" : 0,
+      "_lineLayer" : 0,
+      "_type" : 0,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 20,
+      "_lineIndex" : 0,
+      "_lineLayer" : 1,
+      "_type" : 0,
+      "_cutDirection" : 1
+    },
+    {
+      "_time" : 21,
+      "_lineIndex" : 1,
+      "_lineLayer" : 0,
+      "_type" : 1,
+      "_cutDirection" : 6
+    },
+    {
+      "_time" : 22,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 1,
+      "_cutDirection" : 5
+    },
+    {
+      "_time" : 23,
+      "_lineIndex" : 1,
+      "_lineLayer" : 2,
+      "_type" : 0,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 24,
+      "_lineIndex" : 2,
+      "_lineLayer" : 0,
+      "_type" : 0,
+      "_cutDirection" : 7
+    },
+    {
+      "_time" : 25,
+      "_lineIndex" : 0,
+      "_lineLayer" : 0,
+      "_type" : 1,
+      "_cutDirection" : 6
+    },
+    {
+      "_time" : 26,
+      "_lineIndex" : 3,
+      "_lineLayer" : 2,
+      "_type" : 1,
+      "_cutDirection" : 5
+    },
+    {
+      "_time" : 27,
+      "_lineIndex" : 0,
+      "_lineLayer" : 2,
+      "_type" : 0,
+      "_cutDirection" : 0
+    },
+    {
+      "_time" : 28,
+      "_lineIndex" : 0,
+      "_lineLayer" : 0,
+      "_type" : 0,
+      "_cutDirection" : 1
+    }
+  ],
+  "_obstacles" : [
+  ],
+  "_events" : [
+    {
+      "_time" : 24,
+      "_type" : 2,
+      "_value" : 0
+    }
+  ],
+  "_waypoints" : [
+  ],
+  "_customData" : {
+    "_time" : 10.03
+  }
+}

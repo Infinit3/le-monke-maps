@@ -1,0 +1,1 @@
+Note, this does not include the orignial note files of the map so you will not be able to assemble this map with scuffed walls.

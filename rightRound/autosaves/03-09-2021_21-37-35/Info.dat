@@ -1,0 +1,43 @@
+{
+  "_version" : "2.0.0",
+  "_songName" : "Right Round",
+  "_songSubName" : "",
+  "_songAuthorName" : "Flo Rida",
+  "_levelAuthorName" : "totally balloon",
+  "_beatsPerMinute" : 125,
+  "_previewStartTime" : 8,
+  "_previewDuration" : 7,
+  "_songTimeOffset" : 0,
+  "_shuffle" : 0,
+  "_shufflePeriod" : 0.5,
+  "_coverImageFilename" : "cover.png",
+  "_songFilename" : "song.ogg",
+  "_environmentName" : "OriginsEnvironment",
+  "_allDirectionsEnvironmentName" : "GlassDesertEnvironment",
+  "_customData" : {
+    "_editors" : {
+      "_lastEditedBy" : "ChroMapper",
+      "ChroMapper" : {
+        "version" : "0.7.377"
+      }
+    }
+  },
+  "_difficultyBeatmapSets" : [
+    {
+      "_beatmapCharacteristicName" : "Lawless",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "ExpertPlus",
+          "_difficultyRank" : 9,
+          "_beatmapFilename" : "ExpertPlusLawless.dat",
+          "_noteJumpMovementSpeed" : 20,
+          "_noteJumpStartBeatOffset" : 0.5,
+          "_customData" : {
+            "_colorLeft" : {"r":0.722,"g":0,"b":0},
+            "_colorRight" : {"r":0.484,"g":0,"b":0.665}
+          }
+        }
+      ]
+    }
+  ]
+}
