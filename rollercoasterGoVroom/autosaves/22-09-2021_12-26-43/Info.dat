@@ -1,0 +1,61 @@
+{
+  "_version" : "2.0.0",
+  "_songName" : "ALL CLEAR VROOOOOOOOOOOOO",
+  "_songSubName" : "",
+  "_songAuthorName" : "",
+  "_levelAuthorName" : "",
+  "_beatsPerMinute" : 100,
+  "_previewStartTime" : 4.9,
+  "_previewDuration" : 10,
+  "_songTimeOffset" : 0,
+  "_shuffle" : 0,
+  "_shufflePeriod" : 0.5,
+  "_coverImageFilename" : "cover.jpg",
+  "_songFilename" : "song.ogg",
+  "_environmentName" : "DefaultEnvironment",
+  "_allDirectionsEnvironmentName" : "GlassDesertEnvironment",
+  "_customData" : {
+    "_editors" : {
+      "_lastEditedBy" : "ChroMapper",
+      "ChroMapper" : {
+        "version" : "0.7.430"
+      }
+    }
+  },
+  "_difficultyBeatmapSets" : [
+    {
+      "_beatmapCharacteristicName" : "Lawless",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "Hard",
+          "_difficultyRank" : 5,
+          "_beatmapFilename" : "HardLawless.dat",
+          "_noteJumpMovementSpeed" : 16,
+          "_noteJumpStartBeatOffset" : 0,
+          "_customData" : {
+            "_difficultyLabel" : "balls",
+            "_requirements" : [
+              "Noodle Extensions"
+            ]
+          }
+        },
+        {
+          "_difficulty" : "ExpertPlus",
+          "_difficultyRank" : 9,
+          "_beatmapFilename" : "ExpertPlusLawless.dat",
+          "_noteJumpMovementSpeed" : 20,
+          "_noteJumpStartBeatOffset" : 0.05,
+          "_customData" : {
+            "_difficultyLabel" : "ALL CLEAR",
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_suggestions" : [
+              "Chroma"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
