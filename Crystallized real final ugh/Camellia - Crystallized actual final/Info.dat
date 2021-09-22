@@ -1,0 +1,122 @@
+{
+  "_version": "2.0.0",
+  "_songName": "Crystallized actual final",
+  "_songSubName": "",
+  "_songAuthorName": "Camellia",
+  "_levelAuthorName": "totally balloon",
+  "_beatsPerMinute": 174,
+  "_shuffle": 0,
+  "_shufflePeriod": 0.5,
+  "_previewStartTime": 101.30796813964844,
+  "_previewDuration": 10,
+  "_songFilename": "songe.egg",
+  "_coverImageFilename": "cover.jpg",
+  "_environmentName": "DefaultEnvironment",
+  "_songTimeOffset": 0,
+  "_customData": {
+    "_contributors": [
+      {
+        "_role": "Modder",
+        "_name": "totally balloon",
+        "_iconPath": "totallyballoon.png"
+      },
+      {
+        "_role": "Mapper",
+        "_name": "totally balloon",
+        "_iconPath": "totallyballoon.png"
+      }
+    ],
+    "_editors": {
+      "MMA2": {
+        "version": "4.8.0"
+      },
+      "_lastEditedBy": "MMA2"
+    }
+  },
+  "_difficultyBeatmapSets": [
+    {
+      "_beatmapCharacteristicName": "Standard",
+      "_difficultyBeatmaps": [
+        {
+          "_difficulty": "Hard",
+          "_difficultyRank": 5,
+          "_beatmapFilename": "HardStandard.dat",
+          "_noteJumpMovementSpeed": 21,
+          "_noteJumpStartBeatOffset": 0,
+          "_customData": {
+            "_difficultyLabel": "Amethyst Crystal",
+            "_editorOffset": 0,
+            "_editorOldOffset": 0,
+            "_warnings": [
+              "Can cause lag"
+            ],
+            "_information": [
+              "Cyan is a furry",
+              "This took a lot of time"
+            ],
+            "_suggestions": [],
+            "_requirements": [
+              "Chroma",
+              "Noodle Extensions"
+            ],
+            "_environmentRemoval": [
+              "DoubleColorLaser",
+              "BigTrackLaneRing",
+              "GlowLineL",
+              "GlowLineR",
+              "FrontLights",
+              "Buildings",
+              "BackColumns",
+              "TrackLaneRing",
+              "SmallTrackLaneRings",
+              "Spectrograms",
+              "GlowLineFarL",
+              "GlowLineFarR",
+              "TrackMirror",
+              "TrackConstruction",
+              "RotatingLasersPair",
+              "Construction",
+              "CombinedMesh",
+              "SpectrogramEnd",
+              "BigLightsTrackLanRings",
+              "SidePSR",
+              "SidePSL",
+              "Underground",
+              "TentacleLeft",
+              "TentacleRight",
+              "GlowTopLine",
+              "Laser",
+              "GlowLine",
+              "NearBuildingLeft",
+              "NearBuildingRight",
+              "VConstruction",
+              "FarBuildings",
+              "MonstercatLogoL",
+              "MonstercatLogoR",
+              "Window",
+              "BottomCones",
+              "TopCones",
+              "Light",
+              "Spectrogram",
+              "Mirror",
+              "RocketArena",
+              "RocketCar",
+              "GateLight",
+              "EnvLight",
+              "GreenDayCity",
+              "Cube",
+              "Logo",
+              "LightLinesTrackLaneRings",
+              "MainStructure",
+              "TopStructure",
+              "TimberlandLogo",
+              "BigCenterLightsTrackLaneRings",
+              "BigCenterLightTrackLaneRing",
+              "Environment"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

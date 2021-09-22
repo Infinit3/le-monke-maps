@@ -1,0 +1,2349 @@
+# The first Section are global Options.
+
+# This sets the Mod Support. Remember to also set the Requirements in the Info.dat
+modtype: NE
+# This sets the target Difficulty.
+Characteristic: Standard
+Difficulty: ExpertPlus
+# This is the HJD. It allows Beatwalls to automatically time walls to the Beat
+halfJumpDuration: 2.0
+
+
+# This is an example File of a .bw file. 
+# Guide: https://spooky.moe/beatwalls
+
+# Lines starting with an # are Comments and will get ignored
+
+# -----------------------------------
+# INTRO
+# ----------------------------------
+
+# We only use NE
+# so we can use the Rectangletype for all curves and helix
+
+#save for later
+#Helix:
+#    b: 195+d*r
+#   radius: 10
+#   amount: 25
+#   repeat: 25
+#   splineAmount: 3
+#   startRotation: 45
+#   rotationAmount: 180
+#   wallSpeed: -3
+#   duration: 1
+#   color: gradient(red, orange, yellow, green, cyan, magenta)
+
+#Helix:
+#   b: 196+d*r
+#   radius: 10
+#   amount: 25
+#   repeat: 25
+#   splineAmount: 3
+#   startRotation: -45
+#   rotationAmount:-180
+#   wallSpeed: -3
+#   duration: 1
+#   color: gradient(red, orange, yellow, green, cyan, magenta)
+#   type: rectangle
+
+define Helix1:
+    structures: Helix
+    radius: 10
+    amount: 25
+    splineAmount: 3
+    startRotation: 45
+    rotationAmount: 180
+    wallSpeed: -3
+    duration: 1
+
+define Helix2:
+    structures: Helix
+    radius: 10
+    amount: 25
+    splineAmount: 3
+    startRotation: 45
+    rotationAmount: -180
+    wallSpeed: -3
+    duration: 1
+    
+define: coolHelix
+    structure: Helix1, Helix2
+
+define square:
+    structures: helix
+    amount: 4
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+define circle:
+    structures: helix
+    amount: 50
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+define triangle:
+    structures: helix
+    amount: 3
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+
+define octagon:
+    structures: helix
+    amount: 3
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+define pentagon:
+    structures: helix
+    amount: 5
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+define hexagon:
+    structures: helix
+    amount: 6
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+define heptagon:
+    structures: helix
+    amount: 7
+    rotationAmount: 360
+    radius: 6
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    splineAmount: 1
+    noteJumpMovementSpeed: 50
+
+Line:
+    b: 25
+    duration: 2
+    p0: 4, 1
+    p1: 4, 4
+    color: white
+    amount: 20
+    mirror: 2
+    wallSpeed: -3
+    changeHeight: 1
+
+Line:
+    b: 33
+    duration: 2
+    p0: 3, 4
+    p1: 3, 1
+    mirror: 2
+    wallSpeed: -3
+    changeHeight: 1
+    color: gradient(white, cyan)
+    amount: 40
+
+Line:
+    b: 37.25
+    p0: 5, 0
+    p1: 2, 5
+    wallSpeed: -3
+    mirror: 2
+    color: cyan
+    fitY: 0
+    amount: 40
+
+Line:
+    b: 39
+    p0: 2, 4
+    p1: 3, 4
+    changeHeight: 1
+    changeWidth: 1
+    duration: 2
+    mirror: 2
+    amount: 40
+    wallSpeed: -3
+    color: gradient(cyan, white)
+
+Line:
+    b: 41
+    p0: 3, 7
+    p1: 3, 4
+    amount: 20
+    color: white
+    mirror: 2
+    wallSpeed: -3
+    changeHeight: .5
+    changeWidth: .5
+
+Line:
+    b: 49
+    p0: 3, 6
+    p1: 3,6
+    amount: 40
+    mirror: 2
+    duration: 2
+    color: white
+    wallSpeed: -3
+    rotationY: linear(0, 45)
+
+Line:
+    b: 53
+    p0: 3, 6
+    p1: 3,6
+    amount: 40
+    mirror: 2
+    duration: 2
+    color: white
+    wallSpeed: -3
+    rotationY: linear(0, -45)
+
+# this is where it gets going with some drums
+
+Line:
+    b: 57+d*r
+    duration: 4
+    p0: 6, 3
+    p1: 6, 7
+    p2: 6, 1
+    p3: 6, 9
+    p4: 6, 2
+    fitY: 0
+    repeat: 8
+    color: rainbow
+    amount: 50
+    mirror: 2
+    wallSpeed: -3
+
+Line:
+    b: 57+d*r
+    repeat: 32
+    p0: 3, 3
+    p1: 3, 6
+    rotationX: linear(0, 45)
+    color: magenta
+    amount: 15
+    mirror: 2
+    wallSpeed: -3
+
+#really get going
+
+Line:
+    b: 89+d*r
+    repeat: 49
+    p0: 3, 3
+    p1: 3, 6
+    rotationX: linear(0, 70)
+    color: gradient(blue, green)
+    amount: 8
+    mirror: 8
+    wallSpeed: -3
+
+Helix:
+    b: 145
+    duration: 6
+    color: gradient(blue, cyan)
+    amount: 250
+    radius: 14
+    localRotX: random(40, -50)
+    localRotY: random(40, -50)
+    rotationAmount: 2160
+    changeHeight: 5
+    changeWidth: 5
+    wallSpeed: -3
+
+Helix:
+    b: 149
+    amount: 300
+    rotationAmount: 4320
+    radius: easeinoutquad(12, 4.5)
+    color: gradient(black, blue, cyan, white)
+    duration: 2
+    changeWidth: .2
+    changeHeight: .2
+    wallSpeed: -2
+    rotationY: 180
+
+#DROP IT LIKE ITS HOT 
+
+Line:
+    b: 153
+    duration: 2
+    p0: 3, 20
+    p1: 3, -20
+    amount: 50
+    color: gradient(blue, cyan, white)
+    wallSpeed: -3
+    mirror: 2
+
+Line:
+    b: 155
+    p0: 30, 10
+    p1: 30, 0
+    duration: 1.5
+    amount: 25
+    rotationY: -90
+    wallSpeed: -3
+    color: gradient(blue, cyan, white)
+
+Line:
+    b: 157
+    p0: 3, 4
+    p1: 3, 6
+    rotationX: linear(70, 0)
+    wallSpeed: -3
+    amount: 10
+    color: cyan
+    duration: 1.2
+
+hexagon:
+    b: 157
+    color: blue
+
+
+Line:
+    b: 158.5
+    p0: -3, 4
+    p1: -3, 6
+    rotationX: linear(70, 0)
+    wallSpeed: -3
+    color: cyan
+    duration: 1.2
+    amount: 10
+
+square:
+    b: 158.5
+    color: cyan
+
+Line:
+    b: 160
+    amount: 50
+    mirror: 2
+    duration: 1.8
+    color: cyan
+    wallSpeed: -3
+    p0: 3, 0
+    p1: 3, 0
+    rotationY: linear(0, 90)
+
+Line:
+    b: 160
+    amount: 50
+    mirror: 2
+    duration: 1.8
+    color: cyan
+    wallSpeed: -3
+    p0: 3, 0
+    p1: 3, 0
+    rotationY: linear(0, -90)
+
+square:
+    b: 160
+    color: cyan
+
+Line:
+    b: 162
+    duration: 2
+    mirror: 2
+    p0: 3, 4
+    p1: 3, 7
+    p2: 3, 3
+    p3: 3, 8
+    p4: 3, -4
+    amount: 50
+    color: gradient(cyan, white, blue, green)
+    wallSpeed: -3
+
+Line:
+    b: 165
+    duration: 2.6
+    p0: 4, 4
+    p1: 3, 15
+    p2: 3, 15
+    fitY: 0
+    wallSpeed: -3
+    color: cyan
+    amount: 25
+
+Line:
+    b: 166.5
+    duration: 1.1
+    p0: -4, 4
+    p1: -3, 15
+    p2: -3, 15
+    fitY: 0
+    wallSpeed: -3
+    color: cyan
+    amount: 25
+
+Line:
+    b: 168
+    duration: 2
+    p0: 4, 15
+    p1: 4, -15
+    wallSpeed: -3
+    color: gradient(cyan, blue)
+    mirror: 2
+    amount: 50
+
+Line:
+    b: 171
+    duration: 2
+    amount: 25
+    mirror: 2
+    p0: 4, 0
+    p1: 4, 5
+    p2: 4, 0
+    p3: 4, 4
+    p4: 4, 0
+    color: gradient(red, orange, yellow, green, blue, magenta)
+    wallSpeed: -3
+
+RandomNoise:
+    b: 172
+    amount: 50
+    p0: 16, 5, 0
+    p1: 20, 9, 0.2
+    color: white
+    rotationX: linear(-20, -15)
+    rotationY: -90
+    wallSpeed: -3
+
+RandomNoise:
+    b: 172
+    amount: 50
+    p0:-16, 5, 0
+    p1: -20, 9, 0.2
+    color: white
+    rotationX: linear(-20, -15)
+    rotationY: 90
+    wallSpeed: -3
+Line:
+    b: 172.25
+    p0: -2, 6
+    p1: -2, 6
+    changeHeight: 1
+    changeWidth: 1
+    amount: 25
+    wallSpeed: -3
+    color: gradient(blue, cyan)
+    duration: .6
+    mirror: 2
+    rotationX: 90
+
+Line:
+    b: 173
+    p0: 3, 4
+    p1: 3, 6
+    rotationX: linear(70, 0)
+    wallSpeed: -3
+    amount: 10
+    color: gradient(blue, cyan)
+    duration: 1.2
+
+heptagon:
+    b: 173
+    color: cyan
+
+Line:
+    b: 174.5
+    p0: -3, 4
+    p1: -3, 6
+    rotationX: linear(70, 0)
+    wallSpeed: -3
+    amount: 10
+    color: gradient(blue, cyan)
+    duration: 1.2
+
+pentagon:
+    b: 174.5
+    color: gradient(blue, cyan, blue, cyan)
+
+Line:
+    b: 176
+    amount: 200
+    mirror: 2
+    duration: 2
+    color: gradient(blue, cyan)
+    wallSpeed: -3
+    p0: 3, 0
+    p1: 3, 0
+    rotationY: linear(0, 2160)
+
+triangle:
+    b: 176
+    color: cyan
+
+Line:
+    b: 178
+    duration: 2
+    amount: 50
+    mirror: 2
+    wallSpeed: -3
+    p0: 3, 0
+    p1: 3, 5
+    p2: 3, 3
+    p3: 3, 7
+    p4: 3, 0
+    color: gradient(cyan, blue, white)
+
+Line:
+    b: 181
+    duration: 2
+    p0: 3, 3
+    p1: 3, 0
+    p2: 3, 20
+    color: gradient(blue, cyan, white)
+    amount: 50
+    wallSpeed: -3
+
+pentagon:
+    b: 181
+    color: cyan
+
+Line:
+    b: 182.5
+    duration: 2
+    p0: -3, 3
+    p1: -3, 0
+    p2: -3, 20
+    color: gradient(blue, cyan, white)
+    amount: 50
+    wallSpeed: -3
+
+triangle:
+    b: 183.5
+    color: blue
+
+pentagon:
+    b: 184
+    color: cyan
+
+Line:
+    b: 185
+    duration: 2
+    p0: -3, 20
+    p1: -3, -20
+    color: gradient(blue, cyan, white)
+    amount: 25
+    wallSpeed: -3
+    mirror: 8
+
+square:
+    b: 185
+    color: cyan
+
+Helix:
+    b: 187
+    wallSpeed: -3
+    type: Rectangle
+    duration: 2
+    mirror: 2
+    amount: 100
+    rotationAmount: 1080
+    color: cyan
+    radius: 7
+
+RandomNoise:
+    b: 187
+    amount: 50
+    p0: 2, -2, 0
+    p1: 6, 6, 2
+    color: white
+    wallSpeed: -3
+
+RandomNoise:
+    b: 187
+    amount: 50
+    p0: -2, -2, 0
+    p1: -6, 6, 2
+    color: white
+    wallSpeed: -3
+
+triangle:
+    b: 189
+    color: cyan
+
+Line:
+    b: 189
+    duration: 1.5
+    amount: 50
+    p0: 6, 4
+    p1: -6, 4
+    color: blue
+    rotationY: linear(0, -90)
+    wallSpeed: -3
+
+Line:
+    b: 189
+    duration: 1.5
+    amount: 50
+    p0: 6, 0
+    p1: -6, 0
+    color: blue
+    rotationY: linear(0, 90)
+    wallSpeed: -3
+
+Line:
+    b: 190.5
+    duration: 1.5
+    amount: 50
+    p0: 6, 4
+    p1: -6, 4
+    color: blue
+    rotationY: linear(0, -90)
+    wallSpeed: -3
+
+square:
+    b: 190.5
+    color: cyan
+
+Line:
+    b: 190.5
+    duration: 1.5
+    amount: 50
+    p0: 6, 0
+    p1: -6, 0
+    color: blue
+    rotationY: linear(0, 90)
+    wallSpeed: -3
+
+Line:
+    b: 192
+    amount: 100
+    mirror: 2
+    duration: 2
+    color: gradient(blue, cyan)
+    wallSpeed: -3
+    p0: 3, 0
+    p1: 3, 0
+    rotationY: linear(0, 2160)
+
+Line:
+    b: 192
+    amount: 100
+    mirror: 2
+    duration: 2
+    color: gradient(blue, cyan)
+    wallSpeed: -3
+    p0: 3, 4
+    p1: 3, 4
+    rotationY: linear(0, 2160)
+
+pentagon:
+    b: 192
+    color: cyan
+
+Helix:
+    b: 194
+    duration: 2
+    radius: 6
+    type: rectangle
+    wallSpeed: -3
+    amount: 50
+    color: blue
+    mirror: 2
+
+RandomNoise:
+    b: 194
+    amount: 25
+    p0: 2, -2, 0
+    p1: 6, 6, 2
+    color: white
+    wallSpeed: -3
+
+RandomNoise:
+    b: 194
+    amount: 25
+    p0: -2, -2, 0
+    p1: -6, 6, 2
+    color: white
+    wallSpeed: -3
+
+Helix:
+    b: 197
+    duration: 1.25
+    wallSpeed: -3
+    rotationAmount: 160
+    startRotation: 0
+    amount: 25
+    radius: 4
+    color: cyan
+
+hexagon:
+    b: 197
+    color: cyan
+
+Helix:
+    b: 198.5
+    duration: 1.25
+    wallSpeed: -3
+    rotationAmount: 180
+    startRotation: 160
+    amount: 25
+    radius: 4
+    color: cyan
+
+heptagon:
+    b: 198.5
+
+
+Helix:
+    b: 200
+    duration: 1.5
+    color: blue
+    amount: 50
+    wallSpeed: -3
+    rotationAmount: 360
+    radius: 4
+
+triangle:
+    b: 200
+    color: cyan
+
+Line:
+    b: 202
+    duration: 3
+    color: gradient(blue, cyan, white, blue, cyan, white)
+    amount: 100
+    mirror: 2
+    p0: 2, -3, 0
+    p1: 2, 6, 1
+    p2: 2, 6
+    p3: 20, 6
+    wallSpeed: -3
+
+RandomNoise:
+    b: 203
+    amount: 50
+    p0: 16, 5, 0
+    p1: 20, 9, 1
+    color: white
+    rotationX: linear(-20, -15)
+    rotationY: -90
+    wallSpeed: -3
+
+RandomNoise:
+    b: 203
+    amount: 50
+    p0:-16, 5, 0
+    p1: -20, 9, 1
+    color: white
+    rotationX: linear(-20, -15)
+    rotationY: 90
+    wallSpeed: -3
+
+triangle:
+    b: 205
+    color: cyan
+
+pentagon:
+    b: 206.5
+    color: blue
+
+heptagon:
+    b: 208
+    color: gradient(blue, cyan)
+
+triangle:
+    b: 209.5
+    color: black
+
+triangle:
+    b: 210
+    color: black
+
+triangle:
+    b: 211.5
+    color: black
+
+triangle:
+    b: 212
+    color: black
+
+triangle:
+    b: 213.5
+    color: black
+
+triangle:
+    b: 214
+    color: black
+
+triangle:
+    b: 215.5
+    color: blue
+
+triangle:
+    b: 216
+    color: cyan
+
+#pre drop shapes and helix
+
+Helix:
+    radius: 15
+    b: 217+d*r
+    splineAmount: 5
+    amount:1
+    rotationAmount: 25
+    wallSpeed: -3
+    type: rectangle
+    repeat: 28
+    color: white
+    duration: 1
+    startRotation: 10*r
+
+square:
+    b: 233+r*d*50
+    color: white
+    repeat: 18
+    startRotation: 5*r
+
+hexagon:
+    b: 242.25+r*d*25
+    color: gradient(red, orange, yellow, green, blue, magenta)
+    repeat: 12
+    startRotation: 10*r
+
+Helix:
+    b: 241
+    radius: easeinoutquad(12, 5)
+    color: gradient(red, orange, yellow, green, blue, magenta)
+    amount: 100
+    type: rectangle
+    duration: 4
+    rotationAmount: 2160
+    splineAmount: 1
+
+Helix:
+    radius: 14
+    b: 245
+    splineAmount: 6
+    amount:1
+    rotationAmount: 25
+    type: rectangle
+    color: gradient(red, orange, yellow, green, blue, magenta)
+    duration: 1
+    wallSpeed: -3
+
+Helix:
+    b: 241
+    duration: 4
+    color: gradient(blue, cyan)
+    amount: 500
+    radius: 14
+    localRotX: random(40, -50)
+    localRotY: random(40, -50)
+    rotationAmount: 2160
+    changeHeight: 5
+    changeWidth: 5
+    wallSpeed: -3
+
+Helix:
+    b: 250
+    radius: 10
+    splineAmount: 1
+    amount: 50
+    rotationAmount: 360
+    Duration: 0.01
+    changeDuration: 0.01
+    type: rectangle
+    noteJumpMovementSpeed: 50
+
+#now drop it like ur mom (don't question)
+
+Helix:
+    radius: 22.5
+    b: 249+d*r
+    splineAmount: 15
+    amount:1
+    rotationAmount: 25
+    wallSpeed: -3
+    type: rectangle
+    repeat: 48
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    duration: 1
+    startRotation: 10*r
+
+Helix:
+    b: 249
+    type: rectangle
+    amount: 50
+    splineAmount: 1
+    rotationAmount: 1080
+    duration: 8
+    changeHeight: 3
+    changeWidth: 3
+    changeDuration: .25
+    radius: 15
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 249
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 7
+    p2: 3, -3
+    p3: 3, 7
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 251
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 6
+    p2: 3, -3
+    p3: 3, 6
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 253
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 5
+    p2: 3, -3
+    p3: 3, 5
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 255
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 4
+    p2: 3, -3
+    p3: 3, 4
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Helix:
+    b: 257
+    type: rectangle
+    amount: 50
+    splineAmount: 1
+    rotationAmount: 1080
+    duration: 8
+    changeHeight: 3
+    changeWidth: 3
+    changeDuration: .25
+    radius: 15
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 258
+    p0: 6, -5
+    p1: 6, 20
+    amount: 25
+    mirror: 2
+    color: gradient(cyan, blue)
+    wallSpeed: -3
+    duration: 1
+
+Line:
+    b: 259
+    p0: 3, 0
+    p1: 3, 10
+    p2: 3, 0
+    amount: 25
+    wallSpeed: -3
+    color: gradient(cyan, blue)
+    duration: 1
+
+Line:
+    b: 260
+    p0: -3, 0
+    p1: -3, 10
+    p2: -3, 0
+    amount: 25
+    color: gradient(cyan, blue)
+    wallSpeed: -3
+    duration: 1
+
+Helix:
+    b: 262
+    duration: 1.75
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    amount: 50
+    radius: 20
+    localRotX: random(40, -50)
+    localRotY: random(40, -50)
+    rotationAmount: 2160
+    changeHeight: 3
+    changeWidth: 3
+    wallSpeed: -3
+    splineAmount: 1
+    changeDuration: .25
+
+Helix: 
+    b: 262
+    duration: 2
+    rotationAmount: 1080
+    amount: 50 
+    color: gradient(cyan, magenta)
+    wallSpeed: -3
+    radius: 12
+    type: rectangle
+    mirror: 2
+
+Line:
+    b: 262
+    duration: 2
+    wallSpeed: -3
+    p0: 10, 4
+    p1: 3, 4
+    p2: 10, 4
+    p3: 3, 4
+    p4: 10, 4
+    p5: 3, 4
+    p6: 30, 4
+    amount: 100
+    mirror: 2
+    color: cyan
+    fitY: 0
+
+Helix:
+    b: 265
+    duration: 1
+    radius: linear(15, 3)
+    type: rectangle
+    rotationAmount: 2160
+    amount: 100
+    color: gradient(green, cyan)
+
+Line:
+    b: 266
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 6
+    p2: 3, -3
+    p3: 3, 6
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 268
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 5
+    p2: 3, -3
+    p3: 3, 5
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 270
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 4
+    p2: 3, -3
+    p3: 3, 4
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 272
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 4
+    p2: 3, -3
+    p3: 3, 4
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 274
+    duration: 1
+    fitY: 0
+    mirror: 2
+    amount: 10
+    p0: 6, 3
+    p1: 3, 10
+    p2: 3, 10
+    p3: 3, 10
+    p4: 3, 10
+    color: cyan
+    wallSpeed: -3
+
+Helix:
+    b: 275
+    type: rectangle
+    amount: 50
+    duration: 1
+    color: gradient(cyan, green)
+    radius: easeInOutQuint(15, 4)
+    rotationAmount: 2160
+
+Line:
+    b: 274
+    mirror: 8
+    p0: 5, 8
+    p1: 5, 0
+    amount: 10
+    color: magenta
+    wallSpeed: -3
+    changeWidth: 2
+    changeHeight: 2
+    rotationY: 180
+
+Line:
+    b: 276
+    duration: 1
+    amount: 25
+    mirror: 2
+    color: gradient(blue, lightgray)
+    p0: 5, 20
+    p1: 5, -20
+    wallSpeed: -3
+
+Line:
+    b: 277
+    duration: 2
+    amount: 25
+    mirror: 2
+    p0: 3, 10
+    p1: 3, 5
+    p2: 3, 10
+    p3: 3, 0
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    wallSpeed: -3
+
+RandomNoise:
+    b: 279
+    amount: 25
+    p0:-16, 0, 0
+    p1: -20, 9, 1
+    color: white
+    rotationX: linear(-20, -15)
+    rotationY: 90
+    wallSpeed: -3
+
+Line:
+    b: 279
+    duration: 1
+    p0: 3, 6
+    p1: 3, -7
+    color: lightgray
+    wallSpeed: -3
+
+RandomNoise:
+    b: 280
+    amount: 50
+    p0: 16, 0, 0
+    p1: 20, 9, 1
+    color: white
+    rotationX: linear(-20, -15)
+    rotationY: -90
+    wallSpeed: -3
+
+Line:
+    b: 280
+    duration: 1
+    p0: -3, 6
+    p1: -3, -7
+    color: lightgray
+    wallSpeed: -3
+
+Helix:
+    b: 281
+    duration: 1
+    radius: linear(15, 10)
+    color: gradient(green, cyan)
+    rotationAmount: 2160
+    amount: 100
+    type: rectangle
+
+Line:
+    b: 282+d*r
+    duration: 2
+    wallSpeed: -3
+    repeat: 4
+    p0: 3, -3
+    p1: 3, 8
+    p2: 3, -3
+    p3: 3, 8
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 291
+    p0: 3, 4
+    p1: 8, 4
+    p2: 2, 4
+    p3: 10, 4
+    p4: 0, 4
+    p5: 15, 4
+    p6: 10, 4
+    p7: 0, 4
+    amount: 50
+    mirror: 2
+    color: blue
+    wallSpeed: -3
+    duration: 4
+
+Line:
+    b: 291
+    p0: 3, -4
+    p1: 8, -4
+    p2: 2, -4
+    p3: 10, -4
+    p4: 0, -4
+    p5: 15, -4
+    p6: 10, -4
+    p7: 0, -4
+    amount: 50
+    mirror: 2
+    color: blue
+    wallSpeed: -3
+    duration: 2
+
+Line:
+    b: 293
+    p0: 3, -4
+    p1: 8, -4
+    p2: 2, -4
+    p3: 10, -4
+    p4: 0, -4
+    p5: 15, -4
+    p6: 10, -4
+    p7: 0, -4
+    amount: 50
+    mirror: 2
+    color: blue
+    wallSpeed: -3
+    duration: 2
+
+Line:
+    b: 295
+    duration: 2
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 8
+    p2: 3, -3
+    p3: 3, 8
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 296
+    duration: 1
+    rotationY: 180
+    mirror: 8
+    changeHeight: 2
+    changeWidth: 2
+    amount: 25
+    p0: 5, 7
+    p1: 5, 0
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    wallSpeed: -3
+
+Line:
+    b: 298
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 298
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 299+d*r
+    duration: 2
+    wallSpeed: -3
+    repeat: 2
+    p0: 3, 3
+    p1: 3, -5
+    p2: 3, 3
+    p3: 3, -5
+    p4: 3, 3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Line:
+    b: 299+d*r
+    duration: 2
+    wallSpeed: -3
+    repeat: 2
+    p0: 3, -3
+    p1: 3, 5
+    p2: 3, -3
+    p3: 3, 5
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+Helix:
+    radius: 22.5
+    b: 299+d*r
+    splineAmount: 15
+    amount:1
+    rotationAmount: 25
+    wallSpeed: -3
+    type: rectangle
+    repeat: 11
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    duration: 1
+    startRotation: 10*r
+
+Line:
+    b: 304
+    duration: 1
+    rotationY: 180
+    mirror: 8
+    changeHeight: 2
+    changeWidth: 2
+    amount: 25
+    p0: 5, 10
+    p1: 5, 0
+    color: cyan
+    wallSpeed: -3
+
+Line:
+    b: 306
+    duration: 1
+    mirror: 2
+    changeHeight: 2
+    changeWidth: 2
+    amount: 25
+    p0: 5, 5
+    p1: 5, 0
+    color: magenta
+    wallSpeed: -3
+
+Helix:
+    b: 307
+    duration: 1
+    radius: linear(15, 5)
+    type: rectangle
+    amount: 100
+    rotationAmount: 2160
+    color: gradient(cyan, magenta)
+
+Line:
+    b: 308
+    p0: 3, 10
+    p1: 3, -30
+    color: cyan
+    wallSpeed: -3
+    amount: 25
+    duration: 0.5
+    wallSpeed: -3
+Line:
+    b: 308.5
+    p0: -3, 10
+    p1: -3, -30
+    color: cyan
+    wallSpeed: -3
+    amount: 25
+    duration: 0.5
+    wallSpeed: -3
+
+Line:
+    b: 310
+    rotationY: linear(0, 70)
+    p0: 7, 20
+    fitY: 0
+    color: gradient(white, cyan)
+    amount: 50
+    duration: 2
+    wallSpeed: -3
+    changeHeight: 20
+
+Line:
+    b: 310
+    rotationY: linear(0, -70)
+    p0: -7, 20
+    fitY: 0
+    color: gradient(white, cyan)
+    amount: 50
+    duration: 2
+    wallSpeed: -3
+    changeHeight: 20
+
+Line:
+    b: 312
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 312
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 313
+    changeWidth: 1
+    changeHeight: 1
+    rotationY: 180
+    p0: 3, 9
+    p1: 3, 0
+    mirror: 2
+    wallSpeed: -3
+    duration: 2
+    amount: 100
+
+RandomNoise:
+    b: 316
+    amount: 200
+    p0: 2, -10, 0
+    p1: 50, 30, 2
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    localRotX: random(50, -50)
+    localRotY: random(50, -50)
+    localRotZ: random(50, -50)
+    wallSpeed: -3
+    changeHeight: random(3, 7)
+    changeWidth: 0.01
+
+RandomNoise:
+    b: 316
+    amount: 200
+    p0: -2, -10, 0
+    p1: -50, 30, 2
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    localRotX: random(50, -50)
+    localRotY: random(50, -50)
+    localRotZ: random(50, -50)
+    wallSpeed: -3
+    changeHeight: random(3, 7)
+    changeWidth: 0.01
+
+#bookmark lol
+
+RandomNoise:
+    b: 318
+    amount: 200
+    p0: -2, -10, 0
+    p1: -50, 30, 2
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    localRotX: random(50, -50)
+    localRotY: random(50, -50)
+    localRotZ: random(50, -50)
+    changeDuration: 4
+    wallSpeed: -3
+    changeHeight: random(0.5, 3)
+    changeWidth: random(0.01, 0.5)
+
+RandomNoise:
+    b: 318
+    amount: 200
+    p0: 2, -10, 0
+    p1: 50, 30, 2
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+    localRotX: random(50, -50)
+    localRotY: random(50, -50)
+    localRotZ: random(50, -50)
+    changeDuration: 4
+    wallSpeed: -3
+    changeHeight: random(0.5, 3)
+    changeWidth: random(0.01, 0.5)
+
+Line:
+    b: 322
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 322
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 324
+    duration: 2
+    p0: 4, -10
+    p1: 7, 4
+    wallSpeed: -3
+    color: gradient(cyan, magenta, cyan)
+    mirror: 2
+    amount: 25
+    changeHeight: 1
+    changeWidth: 1
+
+Line:
+    b: 326
+    duration: 2
+    p0: 4, 4
+    p1: 7, -5
+    wallSpeed: -3
+    mirror: 2
+    amount: 25
+    changeHeight: 1
+    changeWidth: 1
+    color: gradient(cyan, magenta, cyan)
+
+Line:
+    b: 328
+    duration: 1
+    p0: 4, 4
+    p1: 4, 3
+    wallSpeed: -3
+    mirror: 2
+    color: magenta
+    changeWidth: 1
+    changeHeight: 1
+
+Line:
+    b: 329
+    duration: 1
+    p0: 4, 4
+    p1: 4, 3
+    wallSpeed: -3
+    mirror: 2
+    color: cyan
+    changeWidth: 1
+    changeHeight: 1
+
+Helix:
+    b: 330
+    duration: 1.5
+    radius: linear(15, 4)
+    type: rectangle
+    amount: 100
+    rotationAmount: 2160
+    color: gradient(white, magenta)
+
+Helix:
+    b: 331.5
+    duration: 4
+    type: rectangle
+    rotationY: 180
+    color: gradient(blue, white, cyan, blue, white, cyan, blue, white, cyan, blue, white , cyan)
+    amount: 200
+    radius: 10
+    rotationAmount: 2160
+    wallSpeed: -3
+
+Line:
+    b: 336
+    duration: 2
+    p0: 7, -10
+    p1: 2, -10
+    changeHeight: 50
+    wallSpeed: -3
+    color: white
+    mirror: 2
+    amount: 50
+
+Helix:
+    b: 338
+    radius: 10
+    amount: 25
+    splineAmount: 3
+    startRotation: 45
+    rotationAmount: 180
+    wallSpeed: -3
+    duration: 1
+    color: blue
+
+Helix:
+    b: 339
+    radius: 10
+    amount: 25
+    splineAmount: 3
+    startRotation: -45
+    rotationAmount:-180
+    wallSpeed: -3
+    duration: 1
+    color: blue
+    type: rectangle
+
+Line:
+    b: 340
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 340
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 342
+    duration: 1
+    wallSpeed: -2
+    amount: 5
+    p0: 3, 0
+    p1: 3, 4
+    color: magenta
+    mirror: 2
+
+Line:
+    b: 343.5
+    duration: 2
+    wallSpeed: -2
+    p0: 3, 0
+    p1: 3, 4
+    amount: 5
+    color: cyan
+    mirror: 2
+
+Line:
+    b: 346
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 346
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Helix:
+    b: 348
+    wallSpeed: -3
+    radius: 10
+    splineAmount: 3
+    rotationAmount: 1080
+    duration: 4
+    amount: 50
+    color: blue
+    type: rectangle
+
+Helix:
+    b: 352
+    wallSpeed: -3
+    radius: 9
+    splineAmount: 3
+    rotationAmount: 180
+    startRotation: 45
+    duration: 1
+    amount: 25
+    color: blue
+    type: rectangle
+
+Helix:
+    b: 353
+    wallSpeed: -3
+    radius: 9
+    splineAmount: 3
+    rotationAmount: -180
+    startRotation: -45
+    duration: 1
+    amount: 25
+    color: blue
+    type: rectangle
+
+Line:
+    b: 354
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 354
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Helix:
+    b: 355
+    wallSpeed: -3
+    radius: 13
+    splineAmount: 3
+    rotationAmount: -180
+    startRotation: -45
+    duration: 1
+    amount: 10
+    color: blue
+    type: rectangle
+
+Helix:
+    b: 356+d*r
+    wallSpeed: -3
+    repeat: 4
+    radius: 15
+    splineAmount: 3
+    amount: 10
+    color: cyan
+    rotationAmount:  90*r
+    startRotation: 10*r
+    duration: .5
+    type: rectangle
+
+Line:
+    b: 358
+    duration: 2
+    p0: 7, -10
+    p1: 2, -10
+    changeHeight: 50
+    wallSpeed: -3
+    color: gradient(black, white, cyan)
+    mirror: 2
+    amount: 50
+
+Helix:
+    b: 360
+    radius: 8
+    amount: 25
+    splineAmount: 3
+    startRotation: -45
+    rotationAmount:-180
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Helix:
+    b: 361
+    radius: 8
+    amount: 25
+    splineAmount: 3
+    startRotation: 45
+    rotationAmount:-180
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 362
+    p0: 6, 0
+    p1: 6, 6
+    wallSpeed: -3
+    mirror: 2
+    color: gradient(blue, cyan)
+    duration: 2
+    amount: 50
+    changeHeight: 3
+    changeWidth: 3
+
+Line:
+    b: 364+d*r
+    repeat: 2
+    changeWidth: 1
+    changeHeight: 1
+    mirror: 2
+    wallSpeed: -3
+    p0: 3, -10
+    p1: 3, 10
+    p2: 3, -10
+    p3: 3, 10
+    p4: 3, -10
+    p5: 3, 10
+    p6: 3, -10
+    p7: 3, 10
+    duration: 2
+    amount: 50
+    color: green
+
+Line:
+    b: 368
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, -14
+    p1: 50, -14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+Line:
+    b: 368
+    changeDuration: 1
+    wallSpeed: -2
+    changeHeight: 20
+    changeWidth: 10
+    p0: -50, 14
+    p1: 50, 14
+    amount: 10
+    color: gradient(magenta, cyan, magenta)
+    duration: 0.01
+
+#settles down at beat: 370
+
+Line:
+    b: 370+d*r
+    duration: 2
+    repeat: 4
+    wallSpeed: -3
+    p0: 3, -3
+    p1: 3, 5
+    p2: 3, -3
+    p3: 3, 5
+    p4: 3, -3
+    mirror: 2
+    amount: 25
+    color: gradient(red, orange, yellow, green, cyan, magenta)
+
+square:
+    b: 378
+    color: green
+
+Line:
+    b: 385
+    p0: 5, 5
+    p1: 5, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 386
+    p0: -5, -5
+    p1: -5, -5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 391.5
+    p0: 4, 5
+    p1: 4, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 393
+    p0: 4, 5
+    p1: 4, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 394
+    p0: 3, 5
+    p1: 3, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    mirror: 2
+    color: cyan
+
+Line:
+    b: 401
+    p0: 5, 5
+    p1: 5, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 402
+    p0: -3, 4
+    p1: -3, 4
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 405
+    p0: 2, 5
+    p1: 2, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 406
+    p0: -2, 5
+    p1: -2, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 408
+    p0: 5, 5
+    p1: 5, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 410
+    p0: 2, 5
+    p1: 2, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 410
+    p0: 2, 3
+    p1: 2, 3
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 410
+    p0: -2, 5
+    p1: -2, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 417
+    p0: -2, 3
+    p1: -2, 3
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 417
+    p0: 2, 5
+    p1: 2, 5
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 410
+    p0: 2, 3
+    p1: 2, 3
+    amount: 5
+    wallSpeed: -3
+    color: cyan
+    duration: 1
+
+Line:
+    b: 417
+    p0: -2, 5
+    p1: -2, 5
+    amount: 5
+    wallSpeed: -3
+    color: cyan
+    duration: 1
+
+Line:
+    b: 417
+    p0: -2, 3
+    p1: -2, 3
+    amount: 5
+    wallSpeed: -3
+    duration: 1
+    color: cyan
+
+Line:
+    b: 418
+    p0: 2, 5
+    p1: 2, 5
+    amount: 5
+    wallSpeed: -3
+    color: cyan
+    duration: 1
+
+Line:
+    b: 418
+    p0: 2, 3
+    p1: 2, 3
+    amount: 5
+    wallSpeed: -3
+    color: cyan
+    duration: 1
+
+Line:
+    b: 418
+    p0: -2, 5
+    p1: -2, 5
+    amount: 5
+    wallSpeed: -3
+    color: cyan
+    duration: 1
+
+Line:
+    b: 418
+    p0: -2, 3
+    p1: -2, 3
+    amount: 5
+    wallSpeed: -3
+    color: cyan
+    duration: 1
+
+Helix:
+    b: 423.5
+    rotationAmount: 45
+    splineAmount: 3
+    amount: 5
+    radius: 9
+    color: cyan
+    wallSpeed: -3
+
+Helix:
+    b: 425
+    rotationAmount: -45
+    splineAmount: 3
+    amount: 5
+    radius: 9
+    color: cyan
+    wallSpeed: -3
+
+Helix:
+    b: 426
+    rotationAmount: 45
+    splineAmount: 3
+    amount: 5
+    radius: 9
+    color: cyan
+    wallSpeed: -3
+
+Helix:
+    radius: 20-r
+    b: 428+d*r
+    splineAmount: 5
+    amount:1
+    rotationAmount: 25
+    wallSpeed: -3
+    type: rectangle
+    repeat: 12
+    color: white
+    duration: 1
+    startRotation: 10*r
+
+#pre drop starts here
+
+Helix:
+    b: 438
+    duration: 2
+    radius: 10
+    rotationAmount: 180
+    startRotation: 45
+    amount: 25
+    wallSpeed: -3
+    color: gradient(white, blue, cyan)
+    splineAmount: 3
+
+Line:
+    b: 440
+    duration: 0.2
+    amount: 10
+    p0: 2, -10
+    p1: 2, 10
+    wallSpeed: -3
+    color: green
+    mirror: 2
+
+Line:
+    b: 440.75
+    duration: 0.2
+    amount: 10
+    p0: 2, -10
+    p1: 2, 10
+    wallSpeed: -3
+    color: green
+    mirror: 2
+
+Line:
+    b: 442
+    duration: 2
+    p0: 7, -10
+    p1: 2, -10
+    changeHeight: 50
+    wallSpeed: -3
+    color: white
+    mirror: 2
+    amount: 50
+    interactable: false
+
+Line:
+    b: 444
+    duration: 2
+    wallSpeed: -3
+    amount: 25
+    p0: -5, 1
+    p1: 5, -3
+    color: cyan
+
+Line:
+    b: 446
+    duration: 1.5
+    wallSpeed: -3
+    color: gradient(cyan, blue)
+    mirror: 2
+    amount: 25
+    p0: 10, 0
+    p1: 0, 0
+    changeWidth: 2
+    interactable: false
+
+Line:
+    b: 447.5
+    duration: 1.5
+    wallSpeed: -3
+    color: cyan
+    rotationY: linear(0,-25)
+    p0: 3, 4
+    p1: 0, 4
+    amount: 25
+
+Line:
+    b: 447.5
+    duration: 1.5
+    wallSpeed: -3
+    color: cyan
+    rotationY: linear(0,25)
+    p0: -3, 4
+    p1: 0, 4
+    amount: 25
+
+Line:
+    b: 449
+    changeWidth: .5
+    changeHeight: .5
+    rotationY: linear(0, 360)
+    p0: -4, 5
+    p1: -3, 5
+    amount: 25
+    wallSpeed: -3
+    changeDuration: .125
+    duration: 2
+    color: cyan
+
+Line:
+    b: 450.75
+    duration: 3
+    color: blue
+    wallSpeed: -3
+    p0: 3, 7
+    p1: 3, 3
+    p2: 3, 7
+    p3: 3, 0
+    p4: 3, 10
+    p5: 3, -10
+    amount: 25
+    mirror: 2
+
+Helix:
+    b: 454
+    rotationAmount: -180
+    startRotation: 45
+    wallSpeed: -3
+    type: rectangle
+    amount: 25
+    color: blue
+    splineAmount: 3
+    duration: 1.5
+    radius: 9
+
+Helix:
+    b: 455.5
+    rotationAmount: 180
+    startRotation: 45
+    wallSpeed: -3
+    type: rectangle
+    amount: 25
+    color: blue
+    splineAmount: 3
+    duration: 1.5
+    radius: 9
+
+Helix:
+    b: 457
+    rotationAmount: 720
+    startRotation: -45
+    wallSpeed: -3
+    type: rectangle
+    amount: 25
+    color: cyan
+    splineAmount: 3
+    duration: 2
+    radius: 9
+
+Line:
+    b: 461.5
+    p0: 3,6
+    p1: 3,-6
+    wallSpeed: -3
+    amount: 25
+    mirror: 2
+    color: cyan
+
+Line:
+    b: 459
+    duration: 3
+    wallSpeed: -3
+    p0: 10, 4
+    p1: 3, 4
+    p2: 10, 4
+    p3: 3, 4
+    p4: 10, 4
+    p5: 3, 4
+    p6: 30, 4
+    amount: 35
+    mirror: 2
+    color: cyan
+    changeHeight: 25
+
+Line:
+    b: 462
+    p0: 3,0
+    p1: 3, 10
+    wallSpeed: -3
+    mirror: 2
+    color: cyan
+    amount: 10
+
+Line:
+    b: 463.5
+    p0: 3, 10
+    p1: 3, 0
+    wallSpeed: -3
+    mirror: 2
+    color: cyan
+    amount: 10
+
+Line:
+    b: 465
+    p0: 3, 10
+    p1: 3, 0
+    wallSpeed: -3
+    mirror: 2
+    color: cyan
+    amount: 10
