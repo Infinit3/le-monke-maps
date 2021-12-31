@@ -1,0 +1,217 @@
+{
+  "_version" : "2.0.0",
+  "_songName" : "Angst!!!",
+  "_songSubName" : "",
+  "_songAuthorName" : "INZO",
+  "_levelAuthorName" : "totally balloon",
+  "_beatsPerMinute" : 150,
+  "_previewStartTime" : 80,
+  "_previewDuration" : 10,
+  "_songTimeOffset" : 0,
+  "_shuffle" : 0,
+  "_shufflePeriod" : 0.5,
+  "_coverImageFilename" : "cover.jpg",
+  "_songFilename" : "song.ogg",
+  "_environmentName" : "BTSEnvironment",
+  "_allDirectionsEnvironmentName" : "GlassDesertEnvironment",
+  "_customData" : {
+    "_editors" : {
+      "_lastEditedBy" : "ChroMapper",
+      "ChroMapper" : {
+        "version" : "0.8.458"
+      },
+      "ScuffedWalls" : {
+        "version" : "v1.5.0"
+      }
+    }
+  },
+  "_difficultyBeatmapSets" : [
+    {
+      "_beatmapCharacteristicName" : "Standard",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "Easy",
+          "_difficultyRank" : 1,
+          "_beatmapFilename" : "EasyStandard.dat",
+          "_noteJumpMovementSpeed" : 10,
+          "_noteJumpStartBeatOffset" : -0.5,
+          "_customData" : {
+            "_difficultyLabel" : "this",
+            "_requirements" : [
+              "Chroma",
+              "Noodle Extensions"
+            ],
+            "_settings" : {
+              "_playerOptions" : {
+                "_leftHanded" : false,
+                "_environmentEffectsFilterDefaultPreset" : "AllEffects",
+                "_environmentEffectsFilterExpertPlusPreset" : "AllEffects",
+                "_hideNoteSpawnEffect" : true
+              },
+              "_environments" : {
+                "_overrideEnvironments" : false
+              },
+              "_graphics" : {
+                "_maxShockwaveParticles" : 0,
+                "_mainEffectGraphicsSetting" : 1,
+                "_screenDisplacementEffectsEnabled" : true
+              },
+              "_chroma" : {
+                "_disableChromaEvents" : false,
+                "_disableEnvironmentEnhancements" : false
+              }
+            }
+          }
+        },
+        {
+          "_difficulty" : "Normal",
+          "_difficultyRank" : 3,
+          "_beatmapFilename" : "NormalStandard.dat",
+          "_noteJumpMovementSpeed" : 13,
+          "_noteJumpStartBeatOffset" : 0.5,
+          "_customData" : {
+            "_difficultyLabel" : "is",
+            "_requirements" : [
+              "Chroma",
+              "Noodle Extensions"
+            ],
+            "_settings" : {
+              "_playerOptions" : {
+                "_leftHanded" : false,
+                "_environmentEffectsFilterDefaultPreset" : "AllEffects",
+                "_environmentEffectsFilterExpertPlusPreset" : "AllEffects",
+                "_hideNoteSpawnEffect" : true
+              },
+              "_environments" : {
+                "_overrideEnvironments" : false
+              },
+              "_graphics" : {
+                "_maxShockwaveParticles" : 0,
+                "_mainEffectGraphicsSetting" : 1,
+                "_screenDisplacementEffectsEnabled" : true
+              },
+              "_chroma" : {
+                "_disableChromaEvents" : false,
+                "_disableEnvironmentEnhancements" : false
+              }
+            }
+          }
+        },
+        {
+          "_difficulty" : "Hard",
+          "_difficultyRank" : 5,
+          "_beatmapFilename" : "HardStandard.dat",
+          "_noteJumpMovementSpeed" : 15,
+          "_noteJumpStartBeatOffset" : 0,
+          "_customData" : {
+            "_difficultyLabel" : "called",
+            "_requirements" : [
+              "Chroma",
+              "Noodle Extensions"
+            ],
+            "_settings" : {
+              "_playerOptions" : {
+                "_leftHanded" : false,
+                "_environmentEffectsFilterDefaultPreset" : "AllEffects",
+                "_environmentEffectsFilterExpertPlusPreset" : "AllEffects",
+                "_hideNoteSpawnEffect" : true
+              },
+              "_environments" : {
+                "_overrideEnvironments" : false
+              },
+              "_graphics" : {
+                "_maxShockwaveParticles" : 0,
+                "_mainEffectGraphicsSetting" : 1,
+                "_screenDisplacementEffectsEnabled" : true
+              },
+              "_chroma" : {
+                "_disableChromaEvents" : false,
+                "_disableEnvironmentEnhancements" : false
+              }
+            }
+          }
+        },
+        {
+          "_difficulty" : "Expert",
+          "_difficultyRank" : 7,
+          "_beatmapFilename" : "ExpertStandard.dat",
+          "_noteJumpMovementSpeed" : 17,
+          "_noteJumpStartBeatOffset" : -0.25,
+          "_customData" : {
+            "_difficultyLabel" : "deep",
+            "_requirements" : [
+              "Chroma",
+              "Noodle Extensions"
+            ],
+            "_settings" : {
+              "_playerOptions" : {
+                "_leftHanded" : false,
+                "_environmentEffectsFilterDefaultPreset" : "AllEffects",
+                "_environmentEffectsFilterExpertPlusPreset" : "AllEffects",
+                "_hideNoteSpawnEffect" : true
+              },
+              "_environments" : {
+                "_overrideEnvironments" : false
+              },
+              "_graphics" : {
+                "_maxShockwaveParticles" : 0,
+                "_mainEffectGraphicsSetting" : 1,
+                "_screenDisplacementEffectsEnabled" : true
+              },
+              "_chroma" : {
+                "_disableChromaEvents" : false,
+                "_disableEnvironmentEnhancements" : false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_beatmapCharacteristicName" : "Lawless",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "Easy",
+          "_difficultyRank" : 1,
+          "_beatmapFilename" : "EasyLawless.dat",
+          "_noteJumpMovementSpeed" : 19,
+          "_noteJumpStartBeatOffset" : -0.5,
+          "_customData" : {
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_suggestions" : [
+              "Chroma"
+            ],
+            "_difficultyLabel" : "PLAY THIS"
+          }
+        },
+        {
+          "_difficulty" : "Hard",
+          "_difficultyRank" : 5,
+          "_beatmapFilename" : "HardLawless.dat",
+          "_noteJumpMovementSpeed" : 19,
+          "_noteJumpStartBeatOffset" : -0.5,
+          "_customData" : {
+            "_requirements" : [
+              "Chroma",
+              "Noodle Extensions"
+            ]
+          }
+        },
+        {
+          "_difficulty" : "ExpertPlus",
+          "_difficultyRank" : 9,
+          "_beatmapFilename" : "ExpertPlusLawless.dat",
+          "_noteJumpMovementSpeed" : 19,
+          "_noteJumpStartBeatOffset" : -0.5,
+          "_customData" : {
+            "_suggestions" : [
+              "Chroma"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
