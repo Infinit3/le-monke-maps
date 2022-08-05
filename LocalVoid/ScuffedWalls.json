@@ -1,0 +1,19 @@
+{
+  "HideMapInRPC": false,
+  "MapFolderPath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid",
+  "SWFilePath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\ExpertPlusStandard_ScuffedWalls.sw",
+  "InfoPath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\Info.dat",
+  "MapFilePath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\ExpertPlusStandard.dat",
+  "OldMapPath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\ExpertPlusStandard_Old.dat",
+  "ClearConsoleOnRefresh": true,
+  "IsAutoImportEnabled": false,
+  "IsBackupEnabled": true,
+  "Debug": false,
+  "IsAutoSimplifyPointDefinitionsEnabled": true,
+  "PrettyPrintJson": false,
+  "BackupPaths": {
+    "BackupFolderPath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\ExpertPlusStandardBackup",
+    "BackupSWFolderPath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\ExpertPlusStandardBackup\\SW_History",
+    "BackupMAPFolderPath": "C:\\Program Files\\Oculus\\Software\\Software\\hyperbolic-magnetism-beat-saber\\Beat Saber_Data\\CustomWIPLevels\\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LocalVoid\\ExpertPlusStandardBackup\\Map_History"
+  }
+}
