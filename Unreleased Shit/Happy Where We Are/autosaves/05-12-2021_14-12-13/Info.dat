@@ -1,0 +1,39 @@
+{
+  "_version" : "2.0.0",
+  "_songName" : "Happy Where We Are",
+  "_songSubName" : "",
+  "_songAuthorName" : "Au5 X Dylan Matthew X Tritonal",
+  "_levelAuthorName" : "totally balloon",
+  "_beatsPerMinute" : 150,
+  "_previewStartTime" : 250,
+  "_previewDuration" : 15,
+  "_songTimeOffset" : 0,
+  "_shuffle" : 0,
+  "_shufflePeriod" : 0.5,
+  "_coverImageFilename" : "happy.jpg",
+  "_songFilename" : "song.ogg",
+  "_environmentName" : "BTSEnvironment",
+  "_allDirectionsEnvironmentName" : "GlassDesertEnvironment",
+  "_customData" : {
+    "_editors" : {
+      "_lastEditedBy" : "ChroMapper",
+      "ChroMapper" : {
+        "version" : "0.8.455"
+      }
+    }
+  },
+  "_difficultyBeatmapSets" : [
+    {
+      "_beatmapCharacteristicName" : "Lawless",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "Easy",
+          "_difficultyRank" : 1,
+          "_beatmapFilename" : "EasyLawless.dat",
+          "_noteJumpMovementSpeed" : 19,
+          "_noteJumpStartBeatOffset" : -0.5
+        }
+      ]
+    }
+  ]
+}
